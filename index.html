@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>フリーランスAIコンサルタント | AIの力で事業変革を加速</title>
     <meta name="description" content="AIを活用したビジネス変革をサポートするフリーランスコンサルタント。戦略立案から実装支援まで、あなたのビジネスの成長をAIの力でサポートします。">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- メインスタイルシート -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- ヘッダーセクション -->
-    <header id="header">
-        <div class="container">
-            <div class="logo">
-                <h1>AI <span>Consultant</span></h1>
-            </div>
-            <nav id="navbar">
+    <a class="skip-link" href="#hero">メインコンテンツへ移動</a>
+
+    <header id="header" class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="#hero" aria-label="AI Consultant トップ">
+                <span>AI</span> Consultant
+            </a>
+            <nav id="navbar" class="site-nav" aria-label="メインナビゲーション">
                 <ul class="nav-menu">
                     <li><a href="#services">サービス</a></li>
                     <li><a href="#case-studies">事例</a></li>
@@ -29,310 +27,383 @@
                     <li><a href="#process">プロセス</a></li>
                     <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" type="button" aria-label="ナビゲーションを開閉" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
 
-    <!-- ヒーローセクション -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">AIの力で<br>ビジネス変革を加速</h2>
-                <p class="hero-subtitle">AIテクノロジーの戦略的活用で、あなたのビジネスの可能性を最大化します。<br>複雑なAIを理解しやすく、導入をスムーズに。</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">無料相談を予約する</a>
-                    <a href="#services" class="btn btn-secondary">サービスを見る</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/ai_business_image.jpg" alt="AIビジネスコンサルティング">
-            </div>
-        </div>
-    </section>
-
-    <!-- サービス概要セクション -->
-    <section id="services" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>提供サービス</h2>
-                <p>あなたのビジネスに最適なAIソリューションを提案・実装します</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>AI戦略立案</h3>
-                    <p>ビジネス目標に合わせたAI導入の戦略策定と実装ロードマップの作成</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>AI実装支援</h3>
-                    <p>最適なAIソリューションの選定と実装支援、および効果測定</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AIチャットボット開発</h3>
-                    <p>業務効率化と顧客体験向上のためのカスタムAIチャットボット構築</p>
-                    <img src="images/ai_chat_illustration.png" alt="AIチャットボット" class="service-image">
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>AI教育・トレーニング</h3>
-                    <p>社内のAI理解度向上と活用促進のための教育プログラム提供</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 実績・成功事例セクション -->
-    <section id="case-studies" class="section-padding bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>成功事例</h2>
-                <p>AIの導入によって実現した具体的な成果をご紹介します</p>
-            </div>
-            <div class="case-studies-grid">
-                <div class="case-study-card">
-                    <div class="case-study-content">
-                        <span class="industry-tag">小売/EC業界</span>
-                        <h3>ECサイトの広告最適化</h3>
-                        <p class="case-challenge"><strong>課題:</strong> 広告予算の効率的な配分と購買率の向上</p>
-                        <p class="case-solution"><strong>解決策:</strong> AIを活用した顧客行動分析と広告配信の最適化</p>
-                        <div class="case-result">
-                            <div class="result-item">
-                                <span class="result-number">30%</span>
-                                <span class="result-label">売上増加</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-number">25%</span>
-                                <span class="result-label">広告コスト削減</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-study-image">
-                        <img src="images/ai_robot_image.jpg" alt="AIによる広告最適化">
-                    </div>
-                </div>
-                <div class="case-study-card">
-                    <div class="case-study-content">
-                        <span class="industry-tag">製造業</span>
-                        <h3>製造プロセスの自動化・効率化</h3>
-                        <p class="case-challenge"><strong>課題:</strong> 製造ラインの効率化と不良品率の低減</p>
-                        <p class="case-solution"><strong>解決策:</strong> AIによる異常検知システムの導入と予知保全</p>
-                        <div class="case-result">
-                            <div class="result-item">
-                                <span class="result-number">40%</span>
-                                <span class="result-label">不良品率低減</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-number">20%</span>
-                                <span class="result-label">生産効率向上</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-study-image">
-                        <img src="images/ai_robot_illustration.png" alt="AI製造プロセス最適化">
-                    </div>
-                </div>
-                <div class="case-study-card">
-                    <div class="case-study-content">
-                        <span class="industry-tag">金融サービス</span>
-                        <h3>顧客対応の自動化</h3>
-                        <p class="case-challenge"><strong>課題:</strong> カスタマーサポートの効率化と顧客満足度向上</p>
-                        <p class="case-solution"><strong>解決策:</strong> AIチャットボットによる24時間対応と自動処理</p>
-                        <div class="case-result">
-                            <div class="result-item">
-                                <span class="result-number">60%</span>
-                                <span class="result-label">対応時間短縮</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-number">35%</span>
-                                <span class="result-label">顧客満足度向上</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-study-image">
-                        <img src="images/ai_chat_image1.jpg" alt="AIチャットボットによる顧客対応">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- プロフィール/専門性セクション -->
-    <section id="profile" class="section-padding">
-        <div class="container">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <div class="profile-placeholder">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                </div>
-                <div class="profile-content">
-                    <h2>プロフィール</h2>
-                    <h3>田中 AI太郎</h3>
-                    <p class="profile-title">AIコンサルタント / データサイエンティスト</p>
-                    <p class="profile-description">
-                        10年以上のAI開発・コンサルティング経験を持ち、大手IT企業でのAI実装プロジェクトを多数リード。
-                        機械学習、自然言語処理、コンピュータビジョンなど幅広いAI技術に精通。
-                        クライアントのビジネス課題をAIで解決するアプローチに定評があり、
-                        業界を問わず多くの企業のデジタルトランスフォーメーションを支援してきました。
+    <main id="main-content">
+        <section id="hero" class="hero-section section-padding">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <p class="eyebrow">Freelance AI Consultant</p>
+                    <h1 class="hero-title">AIの力で<br>ビジネス変革を加速</h1>
+                    <p class="hero-subtitle">
+                        AIテクノロジーの戦略的活用で、あなたのビジネスの可能性を最大化します。
+                        複雑なAIを理解しやすく、導入をスムーズに。
                     </p>
-                    <div class="profile-skills">
-                        <div class="skill-tag">戦略立案</div>
-                        <div class="skill-tag">機械学習</div>
-                        <div class="skill-tag">自然言語処理</div>
-                        <div class="skill-tag">コンピュータビジョン</div>
-                        <div class="skill-tag">データ分析</div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">無料相談を予約する</a>
+                        <a href="#services" class="btn btn-secondary">サービスを見る</a>
                     </div>
-                    <div class="profile-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">案件実績</span>
+                    <ul class="hero-highlights">
+                        <li>
+                            <strong>50+</strong>
+                            <span>AI導入プロジェクト</span>
+                        </li>
+                        <li>
+                            <strong>98%</strong>
+                            <span>顧客満足度</span>
+                        </li>
+                        <li>
+                            <strong>12業種</strong>
+                            <span>支援実績</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-visual reveal" aria-hidden="true">
+                    <div class="hero-orb orb-primary"></div>
+                    <div class="hero-orb orb-secondary"></div>
+                    <div class="hero-device">
+                        <div class="hero-device__header">
+                            <span></span><span></span><span></span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">12</span>
-                            <span class="stat-label">対応業種</span>
+                        <div class="hero-device__body">
+                            <p class="prompt-label">Prompt</p>
+                            <p class="prompt-text">顧客体験を向上させるチャットボットのシナリオを提案して</p>
+                            <div class="hero-response">
+                                <span class="status">AI Response</span>
+                                <p>24時間対応の自動サポートと担当者へのシームレスな引き継ぎを設計します。</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">顧客満足度</span>
-                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <span>ROI +35%</span>
+                        <p>広告最適化</p>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span>Lead Time -28%</span>
+                        <p>製造プロセス改善</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- サービスプロセスセクション -->
-    <section id="process" class="section-padding bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>サービス提供プロセス</h2>
-                <p>AIの導入から活用まで、一貫してサポートします</p>
+        <section id="services" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">Services</p>
+                    <h2>提供サービス</h2>
+                    <p class="section-lead">戦略策定から実装、教育までを一気通貫でサポートします。</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <span class="service-index">01</span>
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>AI戦略立案</h3>
+                        <p>ビジネス目標に合わせたAI導入の戦略策定と実装ロードマップの作成。</p>
+                        <ul class="service-points">
+                            <li>市場/競合リサーチ</li>
+                            <li>KPI設計とROI試算</li>
+                            <li>体制・データ整備計画</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal" data-delay="0.1s">
+                        <span class="service-index">02</span>
+                        <div class="service-icon">
+                            <i class="fas fa-cogs" aria-hidden="true"></i>
+                        </div>
+                        <h3>AI実装支援</h3>
+                        <p>目的に適したソリューションの選定からPoC、本番稼働までを伴走。</p>
+                        <ul class="service-points">
+                            <li>PoC企画・実行</li>
+                            <li>MLOps基盤構築</li>
+                            <li>継続的な改善提案</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal" data-delay="0.2s">
+                        <span class="service-index">03</span>
+                        <div class="service-icon">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                        </div>
+                        <h3>AIチャットボット開発</h3>
+                        <p>業務効率化と顧客体験向上のためのカスタムAIチャットボットを設計。</p>
+                        <ul class="service-points">
+                            <li>ペルソナ/シナリオ設計</li>
+                            <li>多言語対応・運用設計</li>
+                            <li>CRM/FAQ連携</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal" data-delay="0.3s">
+                        <span class="service-index">04</span>
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h3>AI教育・トレーニング</h3>
+                        <p>社内のAI理解度向上と活用促進のための教育プログラムを提供。</p>
+                        <ul class="service-points">
+                            <li>部門別ワークショップ</li>
+                            <li>ハンズオン研修</li>
+                            <li>運用マニュアル作成</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="process-container">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
+        </section>
+
+        <section id="case-studies" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">Case Studies</p>
+                    <h2>成功事例</h2>
+                    <p class="section-lead">AI導入によって実現した成果を抜粋してご紹介します。</p>
+                </div>
+                <div class="case-studies-grid">
+                    <article class="case-study-card reveal" data-theme="commerce">
+                        <div class="case-study-details">
+                            <span class="industry-tag">小売/EC業界</span>
+                            <h3>ECサイトの広告最適化</h3>
+                            <p class="case-challenge"><strong>課題:</strong> 広告予算の効率的な配分と購買率の向上</p>
+                            <p class="case-solution"><strong>解決策:</strong> AIによる顧客行動分析と配信の自動最適化</p>
+                            <div class="case-result">
+                                <div class="result-item">
+                                    <span class="result-number">+30%</span>
+                                    <span class="result-label">売上増加</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">-25%</span>
+                                    <span class="result-label">広告コスト</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-study-visual" aria-hidden="true">
+                            <span>Smart Ads</span>
+                        </div>
+                    </article>
+                    <article class="case-study-card reveal" data-theme="manufacturing">
+                        <div class="case-study-details">
+                            <span class="industry-tag">製造業</span>
+                            <h3>製造プロセスの自動化</h3>
+                            <p class="case-challenge"><strong>課題:</strong> 製造ライン効率と不良品率の低減</p>
+                            <p class="case-solution"><strong>解決策:</strong> センサーデータを活用した異常検知と予知保全</p>
+                            <div class="case-result">
+                                <div class="result-item">
+                                    <span class="result-number">-40%</span>
+                                    <span class="result-label">不良品率</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">+20%</span>
+                                    <span class="result-label">生産効率</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-study-visual" aria-hidden="true">
+                            <span>Smart Factory</span>
+                        </div>
+                    </article>
+                    <article class="case-study-card reveal" data-theme="finance">
+                        <div class="case-study-details">
+                            <span class="industry-tag">金融サービス</span>
+                            <h3>顧客対応の自動化</h3>
+                            <p class="case-challenge"><strong>課題:</strong> カスタマーサポートの効率化と顧客満足度向上</p>
+                            <p class="case-solution"><strong>解決策:</strong> AIチャットボットによる24時間対応と自動処理</p>
+                            <div class="case-result">
+                                <div class="result-item">
+                                    <span class="result-number">-60%</span>
+                                    <span class="result-label">対応時間</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">+35%</span>
+                                    <span class="result-label">顧客満足度</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-study-visual" aria-hidden="true">
+                            <span>Virtual Agent</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="section-padding profile-section">
+            <div class="container">
+                <div class="profile-grid reveal">
+                    <div class="profile-visual" aria-hidden="true">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="profile-badge">
+                            <span>Certified</span>
+                            <p>AI Strategy & Data Science</p>
+                        </div>
+                    </div>
+                    <div class="profile-content">
+                        <p class="section-eyebrow">Profile</p>
+                        <h2>田中 AI太郎</h2>
+                        <p class="profile-title">AIコンサルタント / データサイエンティスト</p>
+                        <p>
+                            10年以上のAI開発・コンサルティング経験を持ち、大手IT企業でのAI実装プロジェクトを多数リード。
+                            機械学習、自然言語処理、コンピュータビジョンなど幅広いAI技術に精通し、業界を問わず多くの企業のDXを支援してきました。
+                        </p>
+                        <div class="profile-skills">
+                            <span class="skill-tag">戦略立案</span>
+                            <span class="skill-tag">機械学習</span>
+                            <span class="skill-tag">自然言語処理</span>
+                            <span class="skill-tag">コンピュータビジョン</span>
+                            <span class="skill-tag">データ分析</span>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">案件実績</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">対応業種</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">顧客満足度</span>
+                            </div>
+                        </div>
+                        <ul class="profile-credentials">
+                            <li><i class="fas fa-award" aria-hidden="true"></i> Google Cloud Certified Professional ML Engineer</li>
+                            <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> データサイエンス修士（東京工業大学）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">Process</p>
+                    <h2>サービス提供プロセス</h2>
+                    <p class="section-lead">AIの導入から活用定着まで、一貫して伴走します。</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <div class="step-number">1</div>
                         <h3>課題ヒアリング</h3>
-                        <p>現状の課題とビジネス目標のヒアリング</p>
+                        <p>現状の課題とビジネス目標の整理、成功指標の設定。</p>
                     </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>AI導入計画の策定</h3>
-                        <p>目標達成のための最適なAIソリューション提案</p>
+                    <div class="process-step reveal" data-delay="0.1s">
+                        <div class="step-number">2</div>
+                        <h3>AI導入計画</h3>
+                        <p>データ診断、システム構成、ロードマップ策定。</p>
                     </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
+                    <div class="process-step reveal" data-delay="0.2s">
+                        <div class="step-number">3</div>
                         <h3>PoC（概念実証）</h3>
-                        <p>小規模での検証と効果測定</p>
+                        <p>小規模での効果検証と費用対効果の見える化。</p>
                     </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
+                    <div class="process-step reveal" data-delay="0.3s">
+                        <div class="step-number">4</div>
                         <h3>本格実装</h3>
-                        <p>検証結果に基づく本格的な実装支援</p>
+                        <p>運用設計やチームトレーニングを含む実装支援。</p>
                     </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
+                    <div class="process-step reveal" data-delay="0.4s">
+                        <div class="step-number">5</div>
                         <h3>効果測定・改善</h3>
-                        <p>定期的な効果測定と継続的な改善提案</p>
+                        <p>ダッシュボード構築、定例レビューによる改善提案。</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 問い合わせ/CTAセクション -->
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2>お問い合わせ</h2>
-                <p>AIに関するご相談・お問い合わせはこちらから</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-form">
-                    <form id="inquiry-form">
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">会社名</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">電話番号</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">送信する</button>
-                    </form>
+        <section id="contact" class="section-padding contact-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">Contact</p>
+                    <h2>お問い合わせ</h2>
+                    <p class="section-lead">AIに関するご相談は24時間以内にご返信します。</p>
                 </div>
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <h3>お問い合わせ方法</h3>
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <p>info@ai-consultant.example.com</p>
+                <div class="contact-container">
+                    <div class="contact-form reveal">
+                        <form id="inquiry-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" autocomplete="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">会社名</label>
+                                <input type="text" id="company" name="company" autocomplete="organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">送信する</button>
+                            <p class="form-message" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                    <div class="contact-info reveal">
+                        <div class="contact-card">
+                            <h3>お問い合わせ方法</h3>
+                            <div class="contact-method">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <p class="method-label">メール</p>
+                                    <p>info@ai-consultant.example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <p class="method-label">電話</p>
+                                    <p>03-1234-5678（平日10:00-18:00）</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                <div>
+                                    <p class="method-label">オンライン相談</p>
+                                    <p>30分無料ヒアリング（要予約）</p>
+                                    <a href="#" class="btn btn-outline">カレンダーを見る</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <p>03-1234-5678</p>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-calendar-alt"></i>
-                            <p>オンライン相談（予約制）</p>
-                            <a href="#" class="btn btn-outline">カレンダーを見る</a>
+                        <div class="contact-card">
+                            <h3>初回相談の流れ</h3>
+                            <ol class="contact-steps">
+                                <li>フォームからご連絡</li>
+                                <li>1営業日以内に日程調整</li>
+                                <li>オンライン/対面で30分無料相談</li>
+                                <li>課題に合わせた提案書をご提出</li>
+                            </ol>
+                            <div class="availability">
+                                <p><i class="fas fa-clock" aria-hidden="true"></i> 直近の空き状況：<strong>今週3枠</strong></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-card">
-                        <h3>初回相談の流れ</h3>
-                        <ol class="contact-steps">
-                            <li>お問い合わせフォームから予約</li>
-                            <li>日程調整のご連絡</li>
-                            <li>オンラインまたは対面での30分無料相談</li>
-                            <li>課題に合わせた提案書の作成・送付</li>
-                        </ol>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- フッターセクション -->
-    <footer id="footer">
+    <footer id="footer" class="site-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2>AI <span>Consultant</span></h2>
+                    <a class="logo" href="#hero">
+                        <span>AI</span> Consultant
+                    </a>
                     <p>AIの力でビジネス変革を加速</p>
                 </div>
                 <div class="footer-links">
@@ -358,20 +429,19 @@
                     <div class="footer-links-column">
                         <h3>SNS</h3>
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AI Consultant. All rights reserved.</p>
+                <p>&copy; <span id="current-year">2025</span> AI Consultant. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScriptファイル -->
     <script src="js/main.js"></script>
 </body>
 </html>
